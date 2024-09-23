@@ -16,16 +16,23 @@ while x<=10:
 
 #tabl2
 y=-0.05
-while y<=1:
-    k=1
-    y += 0.05
-    sum_value = (k*(y)**2)*m.sin(k*y)
-    print(k, round(y,2), y + sum_value)
 
-    while sum_value>10**(-5):
+while y<=1:
+    y += 0.05
+    sum_value = 0
+    k = 1
+    elem = (k*(y)**2)*m.sin(k*y)
+    sum_value += elem
+    print("Функція k =", k, round(y,2), elem)
+
+
+    while elem>10**(-5):
         k+=1
-        sum_value=(k*(y)**2)*m.sin(k*y)
-        print(k, round(y,2), y + sum_value)
+        elem = (k*(y)**2)*m.sin(k*y)
+        sum_value += elem
+
+        print("Функція k =", k, round(y, 2), elem)
+        print("Сума к =", k, round(y,2), y + sum_value)
 
 
 
