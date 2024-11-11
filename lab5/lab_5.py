@@ -128,24 +128,3 @@ for member in race.participants:
 race.find_winner()
 race.sort_speed()
 
-
-
-
-
-
-    # member.speed += anabolic.speed_plus_anabolic
-    # sorted_anabolics = sorted(race.anabolic_for_racer, key=lambda x: (member.speed + anabolic.speed_plus_anabolic))
-    # race.select_anabolic(member)
-    #
-    # member.hp -= anabolic.hp_minus_anabolic
-    # print(f"member_speed with anabolic -> {member.speed}, HP with-> {member.hp}")
-
-
-
-
-
-
-
-
-
-
